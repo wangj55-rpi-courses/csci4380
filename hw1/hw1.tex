@@ -1,0 +1,240 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{upquote,textcomp}
+
+\setlength{\parindent}{0cm}
+
+\setlength{\parskip}{0.3cm plus4mm minus3mm}
+
+\oddsidemargin = 0.2in
+\textwidth = 6.5 in
+\textheight = 9.8 in
+\headsep = -1in
+
+\lstset{frame=tb,
+  language=,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  keepspaces=true,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{black},
+  keywordstyle=\color{black},
+  commentstyle=\color{black},
+  stringstyle=\color{black},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\title{Database Systems, CSCI 4380-01 \\
+Homework \# 1 \\
+Due Monday September 13, 2021 at 11:59:59 PM}
+\date{}
+\begin{document}
+\maketitle
+
+\vspace*{-0.7in}
+
+\noindent{\bf Homework Statement.} This homework is worth 5\% of your
+total grade. It has 10 questions with 10 points for each question. You
+are required to complete at least 4 queries (equivalent of 2
+points). Any points that you did not complete will be added to Midterm
+\#1. (For example, if you only solved 4 queries worth 2 points, your
+Midterm \#1 will be worth 3\% more).
+
+Remember, practice is extremely important to do well in this class. I
+recommend that not only you solve this homework in its entirety, but
+also work on homeworks from past semesters. Link to those is already
+provided in Teams, which I am repeating here:
+
+\url{http://cs.rpi.edu/~sibel/DBS_Past_Materials/}
+
+This homework aims to test relational algebra first and foremost, and
+a bit of normalization theory.
+
+It is recommended that you do the parts in sequence. The questions get
+harder and build on your knowledge of relational algebra from previous
+parts. Each question is equal weight.
+
+{\bf Database Description.} I don't know about you, but I played quite
+a lot of board games during the last few years. So, we will use a
+board game database for our homework for this reason. This database is
+loosely based on the {\tt boardgamegeek} site. It contains the
+following relations:
+
+games(\underline{gameid}, name, year, publisher, min\_players, max\_players, min\_age\_rec, playtime\_min, playtime\_max, iscooperative, description, link) \\
+gametypes(\underline{gameid, gametype}) \\
+gamecategories(\underline{gameid, category}) \\
+gamemechanics(\underline{gameid, mechanic})  \\
+gamedesigners(\underline{gameid, designername}) \\
+
+onlinegamesites(\underline{siteid}, url, price\_per\_month, notes) \\
+gamesonsite(\underline{siteid, gameid}, isfree, min\_players, max\_players) \\
+
+gameprices(\underline{gameid, storename}, price) \\
+gamereviews(\underline{gameid, userid}, review\_text, review\_date, stars, num\_likes) \\
+awardsnominations(\underline{gameid, awardname}, year, iswinner) \\
+
+We store information about games as well as types, categories,
+mechanics and designs for each game. There are a number of online
+sites where a game can be played online (e.g. boardgamearena), for
+each site we have subscription prices as well as which game can be
+played on which site. In an online site, min and max player
+restrictions for the game may be different than a physical board
+game. Finally, games may be nominated for awards and if they win the
+award, {\tt iswinner} is set to true.
+
+Additionally, we store where the game is sold and at which price in
+{\tt gameprices}.
+
+Finally, in our game community, we have a number of user reviews and
+each review is by a user at the site. The reviews have text, star
+rating and number of likes by other member of the same community.
+
+Note: All date fields are formatted as \verb+mon-day-year+,
+e.g. \verb+01-31-2020+. You can assume that you can check if a date
+value {\tt X} comes after another value {\tt Y} by checking whether
+{\tt X $>$ Y}. 
+
+\newpage
+
+{\bf Question 1.}
+Write the following queries using relational algebra. You may use any
+valid relational algebra expression, break into multiple steps as
+needed. However, please make sure that your answers are well-formatted
+and are easily readable. Also, pay attention to the attributes
+required in the output!
+
+
+\begin{enumerate}  [(a)]
+\item Return {\tt name}, min and max {\tt playtime} and {\tt link} of
+  all games that can be played with 4 people, came out in 2020
+  and were published by \verb+'Rio Grande Games'+.
+  %% select only
+
+\item Return the {\tt name} and {\tt designername} of games that won
+  or were nominated for the \\
+  \verb+'Golden Geek Most Innovative Board Game'+ award in 2019 or
+  2020.
+  %% select and join
+
+\item Return the {\tt userid} of all users who never reviewed a game
+  with the \verb+'Loose a Turn'+ mechanic.
+  %% set subtraction
+  
+\item Return {\tt gameid} of all award winner games in
+  categories \verb+'Exploration'+ and
+  \verb+'Adventure'+ that do not involve any \verb+'Dice Rolling'+
+  mechanic.
+  %% select/project and set operations
+
+\item Return the {\tt name, publisher} of all names in the
+  \verb+Strategy+ category that won an \verb+'SXSW'+ award and are
+  either available for less than \$40 in a store or can be played
+  online.
+  %% select/project/join and (union or join)
+
+\item Find the {\tt name, publisher} of {\tt cooperative} games in
+  the \verb+'Farming'+ category that are either of type
+  \verb+'Strategy'+ or have the \verb+'Hidden Victory Points'+
+  mechanic.
+  %% select/join and set operations
+
+\item Return the {\tt storename} of stores with the cheapest price for
+  the game named \verb+'Beyond The Sun'+ that came out in \verb+2019+.
+
+  Assume there is a single game with this name. It is possible that
+  multiple stores have the same cheapest price, if so, all such stores
+  must be returned.
+  
+  %% theta join
+  
+
+\end{enumerate}
+
+{\bf Question 2.} For the following relations, (a) find and list the
+keys, (b) check whether they satisfy BCNF, discuss why or why not, (c)
+check whether they satisfy 3NF, discuss why or why not.
+
+To show that a relation is not in BCNF or 3NF, you only need to show a
+violation. To show that they are in BCNF or 3NF, check each functional
+dependency and discuss why it is ok.
+
+\begin{enumerate}
+
+\item $R1(A,B,C,D,E,F,G)$, ${\cal F} = \{ABC\rightarrow DG, G\rightarrow AEF \}$
+
+\item $R2(A,B,C,D,E,F,G)$, ${\cal F} = \{ABD\rightarrow CEFG, AE\rightarrow BCDG \}$
+
+\item $R3(A,B,C,D,E,F,G)$, ${\cal F} = \{AB\rightarrow CDE, BE\rightarrow F, F\rightarrow G \}$
+
+\end{enumerate}
+
+
+{\bf SUBMISSION INSTRUCTIONS.} Submit a single PDF or Text
+document for this homework using Submitty. No other format and no hand
+written homeworks please. No late submissions will be allowed.
+
+If the Submitty for homework submissions is not immediately available,
+we will announce when it becomes available on Submitty. 
+
+{\bf Help with relational algebra formatting.} While in class I have
+been using a text version of relational algebra, which I have allowed
+for many years for students who do not want to figure out the Greek
+symbols. However, many past solutions use the more standard version
+with Greek symbols. You can use either one in your solutions, but do
+not mix and match. Use one consistently.
+
+I present you with the full syntax here in both ways (as well as the
+Latex symbols for it). Note that for the standard version, I simply
+use the Math mode in Latex.
+
+\begin{tabular}{l|l|l}
+  Operation & Text Version & Standard Version \\ \hline
+   Set Union & R union S & $R \,\cup\, S $ \\
+   Set Intersection & R intersect S & $R \,\cap\, S $ \\
+   Set Difference & R - S & $R \,-\, S $ \\
+   Rename &   T(A,B,C) = R & $\rho_{T(A,B,C)} (R)$ \\
+   Select & select\_\{C\} (R) & $\sigma_{C} (R)$ \\
+   Project & project\_\{A1,..,An\} (R) & $\pi_{A1,..,An} (R)$ \\
+   Cartesian product & R x S & $R \,\times\, S$ \\
+   Theta-Join & R join\_\{C\} S & $R \,\bowtie_{C}\, S$ \\
+   Natural Join & R * S & $R * S$ \\
+  \end{tabular}
+
+As an additional help, I format one of the queries we did in class in
+the standard format below for two equivalent solutions. Please format
+to make sure your queries are readable by a human.
+
+Query: Find the id and title of all movies starring a hero with the
+power to \verb+'Stop Time'+.
+
+Solution 1 (text format)
+
+T1 = project\_\{heroname,multiverseid\} (select\_\{power = 'stop time'\}(MarvelHeroes)) \\
+T2 = project\_\{heroname,multiverseid\} ( select\_\{power = 'stop time'\}(DCHeroes)) \\\
+T3(heroname1,multiverseid1) = T1 union T2 \\
+T4 = T3 join\_\{heroname=heroname1 and multiverseid=multiverseid1\} HeroInMovie \\
+T5(heroname1,movieid1, heroname, multiverseid1)  = T4 \\
+T6 = project\_\{movieid, title\} (T5 join\_\{movieid = movieid1\} Movies) \\
+
+
+Solution 2 (standard format)
+
+\begin{eqnarray*}
+& & T1 = \pi_{heroname,multiverseid} (\sigma_{power = 'stop time'}(MarvelHeroes) \\
+& & T2 = \pi_{heroname,multiverseid} (\sigma_{power = 'stop time'}(DCHeroes) \\
+& & T3(heroname1,multiverseid1) = T1 \cup T2 \\
+& & T4 = T3 \bowtie_{heroname=heroname1 and multiverseid=multiverseid1} HeroInMovie \\
+& & T5(heroname1,movieid1, heroname, multiverseid1)  = T4 \\
+& & T6 = \pi_{movieid, title} (T5 \bowtie_{movieid = movieid1} Movies)
+\end{eqnarray*}
+
+
+\end{document}
+
