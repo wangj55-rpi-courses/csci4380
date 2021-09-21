@@ -1,0 +1,41 @@
+1.
+Rx(A,B,C,D) is Fx={AB->CD}
+
+Rx(A,B,C,D,E) is
+AB+: ABCDEFG
+AD+: ADG
+BC+: BCEF
+
+AB->C AB->D BC->E
+F: ABCDE
+F+ 
+
+-------
+
+Rx(ABDEG)
+AB+: ABCDEFG
+AD+: ADG
+AB->D AB->E AB->G AD->G
+
+AB->DE AD->G
+
+------
+
+Rx(ABDFG)
+AB+:ABCDEFG
+AD+:ADG
+AB->D AB->F AB->G AD->G
+AB->DFG
+
+-----
+
+Rx(ABEG)
+AB+: ABCDEFG
+AB->E AB->G
+AB->EG
+
+-----
+
+Rx(BCEG)
+BC+:BCEF
+BC->EF
