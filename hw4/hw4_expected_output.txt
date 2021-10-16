@@ -1,0 +1,117 @@
+                      ?column?                      
+----------------------------------------------------
+ Output generated on: 2021-10-10 20:25:46.573094-04
+(1 row)
+
+ ?column? 
+----------
+ Query 1
+(1 row)
+
+     name      
+---------------
+ Ariana Grande
+ Bobby Helms
+ Brenda Lee
+ Wham!
+(4 rows)
+
+ ?column? 
+----------
+ Query 2
+(1 row)
+
+      name       
+-----------------
+ Aretha Franklin
+ Kanye West
+ Michael Jackson
+(3 rows)
+
+ ?column? 
+----------
+ Query 3
+(1 row)
+
+ songid |           songname            |  artistname   
+--------+-------------------------------+---------------
+   2028 | Adore You                     | Harry Styles
+   7677 | Blinding Lights               | The Weeknd
+  11123 | Circles                       | Post Malone
+  15495 | Don't Start Now               | Dua Lipa
+  18337 | Falling                       | Trevor Daniel
+  28890 | Ice Cream (with Selena Gomez) | BLACKPINK
+  58411 | The Box                       | Roddy Ricch
+(7 rows)
+
+ ?column? 
+----------
+ Query 4
+(1 row)
+
+ songid |   songname   |  artistname   
+--------+--------------+---------------
+  56098 | Sunset Lover | Petit Biscuit
+  68398 | Yellow       | Coldplay
+(2 rows)
+
+ ?column? 
+----------
+ Query 5
+(1 row)
+
+  id   |           songname            |  artistname   
+-------+-------------------------------+---------------
+ 28890 | Ice Cream (with Selena Gomez) | BLACKPINK
+ 30048 | Intentions                    | Justin Bieber
+ 69834 | cardigan                      | Taylor Swift
+ 69869 | everything i wanted           | Billie Eilish
+(4 rows)
+
+ ?column? 
+----------
+ Query 6
+(1 row)
+
+  id   |      name       | songsonbilboard | minbilboardrank 
+-------+-----------------+-----------------+-----------------
+  1020 | Aretha Franklin |               3 |               1
+  9481 | Kanye West      |               2 |               1
+  9677 | Kendrick Lamar  |               2 |               4
+ 12102 | Michael Jackson |               3 |               1
+ 13109 | Nirvana         |               1 |               6
+(5 rows)
+
+ ?column? 
+----------
+ Query 7
+(1 row)
+
+  id   |     name     
+-------+--------------
+  7395 | Harry Styles
+ 18673 | The Weeknd
+(2 rows)
+
+ ?column? 
+----------
+ Query 8
+(1 row)
+
+         genre          
+------------------------
+ album rock
+ alternative metal
+ classic rock
+ edm
+ hard rock
+ mellow gold
+ north carolina hip hop
+ nu metal
+ pop dance
+ post-grunge
+ rap metal
+ roots rock
+ soft rock
+(13 rows)
+

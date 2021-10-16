@@ -1,0 +1,34 @@
+Converting ER diagrams to relational data model
+-------------------------------------------------
+
+1. Map each entity to a relation: the key of the entity becomes the
+key of the relation and attributes of the entity become attributes of
+the relation
+
+2. For each binary relationship:
+
+- If the relationship has a one side (one to many or one to one), then
+  take key for entity on the one side and include it as an attribute
+  in the other entity
+
+- If the relationship is many to many, create a new relation which has
+  the key of all the entities it connects and the combination of the keys
+  if the key of this new relation.
+
+If the relationship has attributes, then include the attributes where
+you put the relationship.
+
+
+
+1.
+Agents(Name, AgentID) key: AgentID
+Actors(ActorId, Name, AgentID) key: ActorId
+TVShows(TVShowId, Name, TagLine) key: TVShowId
+Seasons(SeasonId, Channel, TVShowId) key: SeasonId, TVShowId
+Episode(EpisodeId, Title, DateFirstAired, SeasonId, TVShowId) key: EpisodeId, SeasonId, TVShowId
+
+2.
+Sheep(name, dob, eweram) key: name
+Shearings(date, wool weight, sheepName, shearersName) key: date, sheepName, shearersName
+Breeds(name, desc, sheepName) key: name
+Shearers(name, phone) key: name
