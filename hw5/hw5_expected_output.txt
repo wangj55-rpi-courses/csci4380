@@ -1,0 +1,146 @@
+                     ?column?                     
+--------------------------------------------------
+ Output started on: 2021-10-17 17:24:31.310286+00
+(1 row)
+
+ ?column? 
+----------
+ Query 1
+(1 row)
+
+   artistname    | numsongs 
+-----------------+----------
+ Aretha Franklin |        3
+ Michael Jackson |        3
+ Kanye West      |        2
+ Kendrick Lamar  |        2
+ Nirvana         |        1
+ Stevie Wonder   |        0
+(6 rows)
+
+ ?column? 
+----------
+ Query 2
+(1 row)
+
+      songname       |   artistname    | numplayed 
+---------------------+-----------------+-----------
+ Talk                | Khalid          |        38
+ The Real Slim Shady | Eminem          |        28
+ Without Me          | Eminem          |        23
+ Break My Stride     | Matthew Wilder  |        22
+ Billie Jean         | Michael Jackson |        20
+ Fake Love           | Drake           |         7
+ Nonstop             | Drake           |         0
+(7 rows)
+
+ ?column? 
+----------
+ Query 3
+(1 row)
+
+      songname      |   artistname   | minrank 
+--------------------+----------------+---------
+ Lucid Dreams       | Juice WRLD     |       4
+ Love Story         | Taylor Swift   |       9
+ Can't Feel My Face | The Weeknd     |      15
+ Bad At Love        | Halsey         |      17
+ Suge               | DaBaby         |      18
+ Issues             | Julia Michaels |      20
+ Location           | Khalid         |      24
+ Be Alright         | Dean Lewis     |      26
+ Mo Bamba           | Sheck Wes      |      40
+ White Iverson      | Post Malone    |      42
+(10 rows)
+
+ ?column? 
+----------
+ Query 4
+(1 row)
+
+      songname      |   artistname   | minrank 
+--------------------+----------------+---------
+ Lucid Dreams       | Juice WRLD     |       4
+ Love Story         | Taylor Swift   |       9
+ Can't Feel My Face | The Weeknd     |      15
+ Bad At Love        | Halsey         |      17
+ Suge               | DaBaby         |      18
+ Issues             | Julia Michaels |      20
+ Location           | Khalid         |      24
+ Be Alright         | Dean Lewis     |      26
+ Mo Bamba           | Sheck Wes      |      40
+ White Iverson      | Post Malone    |      42
+(10 rows)
+
+ ?column? 
+----------
+ Query 5
+(1 row)
+
+             songname              |          artistname          | decade | duration 
+-----------------------------------+------------------------------+--------+----------
+ Camelot                           | NLE Choppa                   | 10s    |        2
+ Follow God                        | Kanye West                   | 10s    |        2
+ Fortunate Son                     | Creedence Clearwater Revival | 60s    |        2
+ Jingle Bell Rock                  | Bobby Helms                  | 10s    |        2
+ Mine                              | Bazzi                        | 10s    |        2
+ My Type                           | Saweetie                     | 10s    |        2
+ Numb Numb Juice                   | ScHoolboy Q                  | 10s    |        2
+ Questions                         | Chris Brown                  | 10s    |        2
+ Respect                           | Aretha Franklin              | 60s    |        2
+ Rockin' Around The Christmas Tree | Brenda Lee                   | 10s    |        2
+ Think                             | Aretha Franklin              | 60s    |        2
+ Wow.                              | Post Malone                  | 10s    |        2
+(12 rows)
+
+ ?column? 
+----------
+ Query 6
+(1 row)
+
+     songname     |  artistname  |   totalstreams   
+------------------+--------------+------------------
+ Blinding Lights  | The Weeknd   |    1,619,922,497
+ Don't Start Now  | Dua Lipa     |    1,012,770,632
+ The Box          | Roddy Ricch  |    1,026,225,982
+ Watermelon Sugar | Harry Styles |      830,583,063
+(4 rows)
+
+ ?column? 
+----------
+ Query 7
+(1 row)
+
+   artistname   
+----------------
+ Adele
+ Alicia Keys
+ Drake
+ Harry Styles
+ Kanye West
+ Kendrick Lamar
+ Lady Gaga
+ Lil Wayne
+ M.I.A.
+ Rihanna
+ Taylor Swift
+ The Weeknd
+(12 rows)
+
+ ?column? 
+----------
+ Query 8
+(1 row)
+
+ station | numsongs 
+---------+----------
+ magic   |        6
+ mai     |       39
+ more    |       27
+(3 rows)
+
+                           ?column?                           
+--------------------------------------------------------------
+ Output finished generating on: 2021-10-17 17:24:35.800635+00
+(1 row)
+
