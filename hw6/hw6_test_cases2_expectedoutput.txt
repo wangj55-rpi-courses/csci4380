@@ -1,0 +1,344 @@
+         recommendation_helper          
+----------------------------------------
+ Inputs: 08:00 10:00 / mai / 10 / 1 0 0
+(1 row)
+
+ songid |    songname    |  artistname   | songscore 
+--------+----------------+---------------+-----------
+  63674 | Undecided      | Chris Brown   |     49.00
+   6304 | Be Careful     | Cardi B       |     46.00
+   8008 | Bodak Yellow   | Cardi B       |     46.00
+  39344 | Money          | Cardi B       |     46.00
+  15065 | Don't          | Bryson Tiller |     41.00
+  12067 | Controlla      | Drake         |     40.00
+  21868 | God's Plan     | Drake         |     40.00
+  29595 | In My Feelings | Drake         |     40.00
+  31524 | Juice          | Lizzo         |     40.00
+  22074 | Good As Hell   | Lizzo         |     40.00
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 08:00 10:00 / mai / 10 / 0 1 0
+(1 row)
+
+ songid |       songname       |   artistname    | songscore 
+--------+----------------------+-----------------+-----------
+   3481 | All Time Low         | Jon Bellion     |    340.81
+  67933 | Wonderwall           | Oasis           |      6.67
+  61631 | Thunder              | Imagine Dragons |      5.95
+   9456 | Cake By The Ocean    | DNCE            |      2.63
+  24491 | Hey Brother          | Avicii          |      1.61
+  50638 | Say You Won't Let Go | James Arthur    |      1.10
+  35337 | Location             | Khalid          |      1.10
+  15065 | Don't                | Bryson Tiller   |      0.98
+  25761 | How Long             | Charlie Puth    |      0.97
+  66323 | Whatever It Takes    | Imagine Dragons |      0.93
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 08:00 10:00 / mai / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          | songscore 
+--------+--------------------+------------------------------+-----------
+  10681 | Chasing Cars       | Snow Patrol                  |     14.73
+  22564 | Graveyard          | Halsey                       |     13.23
+   8569 | Break My Stride    | Matthew Wilder               |     11.05
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |      9.74
+  19912 | Fortunate Son      | Creedence Clearwater Revival |      9.02
+   8405 | Bounce Back        | Big Sean                     |      8.90
+  48153 | Reminder           | The Weeknd                   |      8.47
+   4964 | Attention          | Charlie Puth                 |      7.41
+  63674 | Undecided          | Chris Brown                  |      7.40
+  52943 | Slide Away         | Miley Cyrus                  |      7.09
+(10 rows)
+
+           recommendation_helper           
+-------------------------------------------
+ Inputs: 08:00 10:00 / mai / 20 / 0.05 1 1
+(1 row)
+
+ songid |      songname      |          artistname          | songscore 
+--------+--------------------+------------------------------+-----------
+   3481 | All Time Low       | Jon Bellion                  |    346.29
+  22564 | Graveyard          | Halsey                       |     14.75
+  10681 | Chasing Cars       | Snow Patrol                  |     14.73
+   8569 | Break My Stride    | Matthew Wilder               |     11.05
+   8405 | Bounce Back        | Big Sean                     |     10.66
+  63674 | Undecided          | Chris Brown                  |      9.89
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |      9.74
+  48153 | Reminder           | The Weeknd                   |      9.39
+  19912 | Fortunate Son      | Creedence Clearwater Revival |      9.02
+   4964 | Attention          | Charlie Puth                 |      8.96
+  61631 | Thunder            | Imagine Dragons              |      8.95
+  52943 | Slide Away         | Miley Cyrus                  |      8.56
+  67933 | Wonderwall         | Oasis                        |      8.50
+  25761 | How Long           | Charlie Puth                 |      8.48
+  62978 | Truth Hurts        | Lizzo                        |      8.47
+  66932 | White Iverson      | Post Malone                  |      8.23
+  68157 | Wow.               | Post Malone                  |      8.02
+  39217 | Mo Bamba           | Sheck Wes                    |      7.65
+  59236 | The Hills          | The Weeknd                   |      7.51
+  50279 | Sanguine Paradise  | Lil Uzi Vert                 |      7.17
+(20 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 20:00 22:00 / mai / 10 / 1 0 0
+(1 row)
+
+ songid |    songname    |  artistname   | songscore 
+--------+----------------+---------------+-----------
+  47207 | Questions      | Chris Brown   |     61.00
+   8008 | Bodak Yellow   | Cardi B       |     58.00
+  15065 | Don't          | Bryson Tiller |     54.00
+   8155 | Boo'd Up       | Ella Mai      |     52.00
+  18264 | Fake Love      | Drake         |     50.00
+  21868 | God's Plan     | Drake         |     50.00
+  29595 | In My Feelings | Drake         |     50.00
+  42251 | Nonstop        | Drake         |     50.00
+   6102 | Barbie Dreams  | Nicki Minaj   |     45.00
+  11036 | Chun-Li        | Nicki Minaj   |     45.00
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 20:00 22:00 / mai / 10 / 0 1 0
+(1 row)
+
+ songid |        songname        |     artistname      | songscore 
+--------+------------------------+---------------------+-----------
+  31292 | Jingle Bell Rock       | Bobby Helms         |      4.75
+  37521 | Malibu                 | Miley Cyrus         |      3.38
+  12991 | DNA.                   | Kendrick Lamar      |      2.83
+  24548 | Hey Look Ma, I Made It | Panic! At The Disco |      2.23
+  14619 | Disturbia              | Rihanna             |      2.03
+  15066 | Don't                  | Ed Sheeran          |      1.76
+  21956 | Gold                   | Kiiara              |      1.73
+  67730 | Without Me             | Eminem              |      1.67
+   5847 | Bad Romance            | Lady Gaga           |      1.46
+  66932 | White Iverson          | Post Malone         |      1.24
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 20:00 22:00 / mai / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          | songscore 
+--------+--------------------+------------------------------+-----------
+  10681 | Chasing Cars       | Snow Patrol                  |     12.19
+  22564 | Graveyard          | Halsey                       |     11.14
+   8405 | Bounce Back        | Big Sean                     |     10.18
+  48153 | Reminder           | The Weeknd                   |      9.62
+   8569 | Break My Stride    | Matthew Wilder               |      9.56
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |      8.87
+   4964 | Attention          | Charlie Puth                 |      8.30
+  19912 | Fortunate Son      | Creedence Clearwater Revival |      8.00
+  48245 | Respect            | Aretha Franklin              |      7.77
+  52943 | Slide Away         | Miley Cyrus                  |      7.72
+(10 rows)
+
+           recommendation_helper           
+-------------------------------------------
+ Inputs: 20:00 22:00 / mai / 20 / 0.05 1 1
+(1 row)
+
+ songid |      songname      |          artistname          | songscore 
+--------+--------------------+------------------------------+-----------
+  22564 | Graveyard          | Halsey                       |     12.88
+   8405 | Bounce Back        | Big Sean                     |     12.42
+  10681 | Chasing Cars       | Snow Patrol                  |     12.24
+  48153 | Reminder           | The Weeknd                   |     10.89
+   4964 | Attention          | Charlie Puth                 |     10.04
+   8569 | Break My Stride    | Matthew Wilder               |      9.56
+  52943 | Slide Away         | Miley Cyrus                  |      9.39
+  62978 | Truth Hurts        | Lizzo                        |      9.37
+  66932 | White Iverson      | Post Malone                  |      8.90
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |      8.87
+  59236 | The Hills          | The Weeknd                   |      8.53
+  50279 | Sanguine Paradise  | Lil Uzi Vert                 |      8.25
+  18264 | Fake Love          | Drake                        |      8.20
+  19912 | Fortunate Son      | Creedence Clearwater Revival |      8.00
+  12991 | DNA.               | Kendrick Lamar               |      7.88
+  38424 | Mercy              | Shawn Mendes                 |      7.81
+  48245 | Respect            | Aretha Franklin              |      7.77
+  37521 | Malibu             | Miley Cyrus                  |      7.71
+  25761 | How Long           | Charlie Puth                 |      7.52
+  39217 | Mo Bamba           | Sheck Wes                    |      7.43
+(20 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 08:00 10:00 / more / 10 / 1 0 0
+(1 row)
+
+ songid |     songname     |   artistname    | songscore 
+--------+------------------+-----------------+-----------
+  34228 | Let You Love Me  | Rita Ora        |    161.00
+   1521 | A Thousand Years | Christina Perri |    158.00
+  28108 | I'll Be There    | Jess Glynne     |    155.00
+  15122 | Don't Call Me Up | Mabel           |    154.00
+   7316 | Birthday         | Anne-Marie      |    150.00
+  48236 | Rescue Me        | OneRepublic     |    148.00
+   8586 | Break Up Song    | Little Mix      |    145.00
+  56498 | Sweet Melody     | Little Mix      |    145.00
+  36870 | Lush Life        | Zara Larsson    |    145.00
+  49576 | Ruin My Life     | Zara Larsson    |    145.00
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 08:00 10:00 / more / 10 / 0 1 0
+(1 row)
+
+ songid |             songname              |    artistname     | songscore 
+--------+-----------------------------------+-------------------+-----------
+  49128 | Rockin' Around The Christmas Tree | Brenda Lee        |      4.65
+  41409 | New Rules                         | Dua Lipa          |      3.19
+  18337 | Falling                           | Trevor Daniel     |      1.64
+   6304 | Be Careful                        | Cardi B           |      1.33
+  46842 | Pumped Up Kicks                   | Foster The People |      1.14
+  30107 | Into You                          | Ariana Grande     |      0.85
+  55640 | Style                             | Taylor Swift      |      0.79
+  25726 | How Do You Sleep?                 | Sam Smith         |      0.77
+  42573 | Numb                              | Linkin Park       |      0.67
+  60069 | The Real Slim Shady               | Eminem            |      0.65
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 08:00 10:00 / more / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          | songscore 
+--------+--------------------+------------------------------+-----------
+  36616 | Lovely Day         | Bill Withers                 |     10.25
+  62823 | Trip               | Ella Mai                     |     10.03
+  19912 | Fortunate Son      | Creedence Clearwater Revival |      9.81
+  22564 | Graveyard          | Halsey                       |      9.30
+   6973 | Better Now         | Post Malone                  |      7.69
+  11036 | Chun-Li            | Nicki Minaj                  |      6.31
+  66932 | White Iverson      | Post Malone                  |      6.06
+   8569 | Break My Stride    | Matthew Wilder               |      5.98
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |      5.90
+  39217 | Mo Bamba           | Sheck Wes                    |      5.90
+(10 rows)
+
+           recommendation_helper            
+--------------------------------------------
+ Inputs: 08:00 10:00 / more / 20 / 0.05 1 1
+(1 row)
+
+ songid |      songname       |          artistname          | songscore 
+--------+---------------------+------------------------------+-----------
+  62823 | Trip                | Ella Mai                     |     17.17
+  22564 | Graveyard           | Halsey                       |     16.02
+  11036 | Chun-Li             | Nicki Minaj                  |     12.91
+  25726 | How Do You Sleep?   | Sam Smith                    |     12.11
+  62978 | Truth Hurts         | Lizzo                        |     12.03
+  38424 | Mercy               | Shawn Mendes                 |     11.96
+  41409 | New Rules           | Dua Lipa                     |     11.70
+  25761 | How Long            | Charlie Puth                 |     11.67
+   1521 | A Thousand Years    | Christina Perri              |     11.25
+  67732 | Without Me          | Halsey                       |     11.10
+  44769 | Paradise            | Bazzi                        |     10.98
+  36870 | Lush Life           | Zara Larsson                 |     10.86
+  49576 | Ruin My Life        | Zara Larsson                 |     10.78
+   6102 | Barbie Dreams       | Nicki Minaj                  |     10.58
+  15122 | Don't Call Me Up    | Mabel                        |     10.52
+  19912 | Fortunate Son       | Creedence Clearwater Revival |     10.31
+  36616 | Lovely Day          | Bill Withers                 |     10.25
+   5680 | Back To You         | Selena Gomez                 |     10.22
+  57672 | Tell Me You Love Me | Demi Lovato                  |     10.21
+  66574 | When We Were Young  | Adele                        |     10.13
+(20 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 20:00 22:00 / edge / 10 / 1 0 0
+(1 row)
+
+ songid |        songname         |  artistname  | songscore 
+--------+-------------------------+--------------+-----------
+  34228 | Let You Love Me         | Rita Ora     |    223.00
+  69638 | Your Song               | Rita Ora     |    223.00
+  49576 | Ruin My Life            | Zara Larsson |    213.00
+  15122 | Don't Call Me Up        | Mabel        |    209.00
+  28108 | I'll Be There           | Jess Glynne  |    203.00
+    628 | 2002                    | Anne-Marie   |    199.00
+  50677 | Scars To Your Beautiful | Alessia Cara |    193.00
+  34690 | Lights Down Low         | MAX          |    192.00
+  57164 | Take Yourself Home      | Troye Sivan  |    189.00
+  44769 | Paradise                | Bazzi        |    188.00
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 20:00 22:00 / edge / 10 / 0 1 0
+(1 row)
+
+ songid |             songname              |   artistname    | songscore 
+--------+-----------------------------------+-----------------+-----------
+  61383 | This Love                         | Maroon 5        |      3.01
+  50677 | Scars To Your Beautiful           | Alessia Cara    |      2.37
+  30107 | Into You                          | Ariana Grande   |      1.52
+  49128 | Rockin' Around The Christmas Tree | Brenda Lee      |      1.37
+  41409 | New Rules                         | Dua Lipa        |      1.20
+  18337 | Falling                           | Trevor Daniel   |      0.89
+   6304 | Be Careful                        | Cardi B         |      0.79
+  66323 | Whatever It Takes                 | Imagine Dragons |      0.79
+  25761 | How Long                          | Charlie Puth    |      0.76
+  15065 | Don't                             | Bryson Tiller   |      0.75
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 20:00 22:00 / edge / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          | songscore 
+--------+--------------------+------------------------------+-----------
+  19912 | Fortunate Son      | Creedence Clearwater Revival |     13.51
+  39217 | Mo Bamba           | Sheck Wes                    |      7.76
+  54826 | Starships          | Nicki Minaj                  |      6.95
+  38424 | Mercy              | Shawn Mendes                 |      6.90
+  22564 | Graveyard          | Halsey                       |      6.45
+  46842 | Pumped Up Kicks    | Foster The People            |      6.35
+  10681 | Chasing Cars       | Snow Patrol                  |      5.78
+  36429 | Love Story         | Taylor Swift                 |      5.65
+  33445 | Last Christmas     | Wham!                        |      5.65
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |      5.63
+(10 rows)
+
+           recommendation_helper            
+--------------------------------------------
+ Inputs: 20:00 22:00 / edge / 20 / 0.05 1 1
+(1 row)
+
+ songid |        songname         |          artistname          | songscore 
+--------+-------------------------+------------------------------+-----------
+  38424 | Mercy                   | Shawn Mendes                 |     16.01
+  54826 | Starships               | Nicki Minaj                  |     15.70
+  22564 | Graveyard               | Halsey                       |     15.66
+  50677 | Scars To Your Beautiful | Alessia Cara                 |     15.49
+  62823 | Trip                    | Ella Mai                     |     14.42
+  44769 | Paradise                | Bazzi                        |     14.34
+   4964 | Attention               | Charlie Puth                 |     14.03
+  19912 | Fortunate Son           | Creedence Clearwater Revival |     13.81
+  12296 | Counting Stars          | OneRepublic                  |     13.51
+  49576 | Ruin My Life            | Zara Larsson                 |     13.46
+  52943 | Slide Away              | Miley Cyrus                  |     13.21
+  62767 | Treat You Better        | Shawn Mendes                 |     13.16
+   9456 | Cake By The Ocean       | DNCE                         |     13.14
+  11036 | Chun-Li                 | Nicki Minaj                  |     13.06
+   5738 | Bad At Love             | Halsey                       |     12.83
+  15122 | Don't Call Me Up        | Mabel                        |     12.79
+   6102 | Barbie Dreams           | Nicki Minaj                  |     12.75
+  36360 | Love On The Brain       | Rihanna                      |     12.66
+  25761 | How Long                | Charlie Puth                 |     12.65
+  22628 | Green Light             | Lorde                        |     12.56
+(20 rows)
+

@@ -1,0 +1,344 @@
+         recommendation_helper          
+----------------------------------------
+ Inputs: 08:00 10:00 / mai / 10 / 1 0 0
+(1 row)
+
+ songid |    songname    |  artistname   | songscore 
+--------+----------------+---------------+-----------
+  63674 | Undecided      | Chris Brown   |        49
+   6304 | Be Careful     | Cardi B       |        46
+   8008 | Bodak Yellow   | Cardi B       |        46
+  39344 | Money          | Cardi B       |        46
+  15065 | Don't          | Bryson Tiller |        41
+  12067 | Controlla      | Drake         |        40
+  21868 | God's Plan     | Drake         |        40
+  22074 | Good As Hell   | Lizzo         |        40
+  29595 | In My Feelings | Drake         |        40
+  31524 | Juice          | Lizzo         |        40
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 08:00 10:00 / mai / 10 / 0 1 0
+(1 row)
+
+ songid |       songname       |   artistname    |     songscore      
+--------+----------------------+-----------------+--------------------
+   3481 | All Time Low         | Jon Bellion     |  340.8065412208221
+  67933 | Wonderwall           | Oasis           |  6.666666666666667
+  61631 | Thunder              | Imagine Dragons |  5.945699873112884
+   9456 | Cake By The Ocean    | DNCE            | 2.6283627063547277
+  24491 | Hey Brother          | Avicii          | 1.6141137942409722
+  35337 | Location             | Khalid          | 1.1009931576872984
+  50638 | Say You Won't Let Go | James Arthur    | 1.0972113351435997
+  15065 | Don't                | Bryson Tiller   | 0.9793072810814414
+  25761 | How Long             | Charlie Puth    | 0.9683927204943096
+  66323 | Whatever It Takes    | Imagine Dragons | 0.9306594828459637
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 08:00 10:00 / mai / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          |    songscore     
+--------+--------------------+------------------------------+------------------
+  10681 | Chasing Cars       | Snow Patrol                  | 14.7287490452615
+  22564 | Graveyard          | Halsey                       | 13.2293214681019
+   8569 | Break My Stride    | Matthew Wilder               | 11.0504040501309
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               | 9.74334633838085
+  19912 | Fortunate Son      | Creedence Clearwater Revival | 9.01758558010772
+   8405 | Bounce Back        | Big Sean                     | 8.89597931388277
+  48153 | Reminder           | The Weeknd                   | 8.46700107288999
+   4964 | Attention          | Charlie Puth                 | 7.41102273172415
+  63674 | Undecided          | Chris Brown                  | 7.40161926281987
+  52943 | Slide Away         | Miley Cyrus                  | 7.08689238756392
+(10 rows)
+
+           recommendation_helper           
+-------------------------------------------
+ Inputs: 08:00 10:00 / mai / 20 / 0.05 1 1
+(1 row)
+
+ songid |      songname      |          artistname          |     songscore      
+--------+--------------------+------------------------------+--------------------
+   3481 | All Time Low       | Jon Bellion                  |  346.2888457359525
+  22564 | Graveyard          | Halsey                       | 14.753755292439722
+  10681 | Chasing Cars       | Snow Patrol                  |   14.7287490452615
+   8569 | Break My Stride    | Matthew Wilder               |   11.0504040501309
+   8405 | Bounce Back        | Big Sean                     | 10.664209110053644
+  63674 | Undecided          | Chris Brown                  |   9.88956788325483
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |   9.74334633838085
+  48153 | Reminder           | The Weeknd                   |  9.388354080043054
+  19912 | Fortunate Son      | Creedence Clearwater Revival |   9.01758558010772
+   4964 | Attention          | Charlie Puth                 |   8.96370980047036
+  61631 | Thunder            | Imagine Dragons              |  8.953973815107284
+  52943 | Slide Away         | Miley Cyrus                  |  8.563428318845729
+  67933 | Wonderwall         | Oasis                        |  8.500935418832848
+  25761 | How Long           | Charlie Puth                 |   8.47640598638946
+  62978 | Truth Hurts        | Lizzo                        |  8.466793277882674
+  66932 | White Iverson      | Post Malone                  |  8.228417362943771
+  68157 | Wow.               | Post Malone                  |  8.023088760294115
+  39217 | Mo Bamba           | Sheck Wes                    |  7.650082339043358
+  59236 | The Hills          | The Weeknd                   |  7.514415991975562
+  50279 | Sanguine Paradise  | Lil Uzi Vert                 |  7.173135439841152
+(20 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 20:00 22:00 / mai / 10 / 1 0 0
+(1 row)
+
+ songid |    songname    |  artistname   | songscore 
+--------+----------------+---------------+-----------
+  47207 | Questions      | Chris Brown   |        61
+   8008 | Bodak Yellow   | Cardi B       |        58
+  15065 | Don't          | Bryson Tiller |        54
+   8155 | Boo'd Up       | Ella Mai      |        52
+  18264 | Fake Love      | Drake         |        50
+  21868 | God's Plan     | Drake         |        50
+  29595 | In My Feelings | Drake         |        50
+  42251 | Nonstop        | Drake         |        50
+   6102 | Barbie Dreams  | Nicki Minaj   |        45
+  11036 | Chun-Li        | Nicki Minaj   |        45
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 20:00 22:00 / mai / 10 / 0 1 0
+(1 row)
+
+ songid |        songname        |     artistname      |     songscore      
+--------+------------------------+---------------------+--------------------
+  31292 | Jingle Bell Rock       | Bobby Helms         |   4.75280212545258
+  37521 | Malibu                 | Miley Cyrus         |  3.377049454662857
+  12991 | DNA.                   | Kendrick Lamar      | 2.8257885596330845
+  24548 | Hey Look Ma, I Made It | Panic! At The Disco | 2.2254958541455325
+  14619 | Disturbia              | Rihanna             |  2.032967032967033
+  15066 | Don't                  | Ed Sheeran          | 1.7595141676672172
+  21956 | Gold                   | Kiiara              |   1.73130804695232
+  67730 | Without Me             | Eminem              | 1.6666666666666667
+   5847 | Bad Romance            | Lady Gaga           | 1.4583333333333335
+  66932 | White Iverson          | Post Malone         | 1.2439613154332518
+(10 rows)
+
+         recommendation_helper          
+----------------------------------------
+ Inputs: 20:00 22:00 / mai / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          |    songscore     
+--------+--------------------+------------------------------+------------------
+  10681 | Chasing Cars       | Snow Patrol                  | 12.1872501341686
+  22564 | Graveyard          | Halsey                       | 11.1443540115495
+   8405 | Bounce Back        | Big Sean                     | 10.1762046173075
+  48153 | Reminder           | The Weeknd                   | 9.62028395642423
+   8569 | Break My Stride    | Matthew Wilder               | 9.55539106632363
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               | 8.86894642934634
+   4964 | Attention          | Charlie Puth                 | 8.30486691895667
+  19912 | Fortunate Son      | Creedence Clearwater Revival | 7.99661172137634
+  48245 | Respect            | Aretha Franklin              | 7.77191214297432
+  52943 | Slide Away         | Miley Cyrus                  | 7.71672349022993
+(10 rows)
+
+           recommendation_helper           
+-------------------------------------------
+ Inputs: 20:00 22:00 / mai / 20 / 0.05 1 1
+(1 row)
+
+ songid |      songname      |          artistname          |     songscore      
+--------+--------------------+------------------------------+--------------------
+  22564 | Graveyard          | Halsey                       | 12.884008883619714
+   8405 | Bounce Back        | Big Sean                     |  12.41932338592028
+  10681 | Chasing Cars       | Snow Patrol                  | 12.243782797485183
+  48153 | Reminder           | The Weeknd                   | 10.892730170744613
+   4964 | Attention          | Charlie Puth                 | 10.038067177609426
+   8569 | Break My Stride    | Matthew Wilder               |   9.55539106632363
+  52943 | Slide Away         | Miley Cyrus                  |   9.39496897915935
+  62978 | Truth Hurts        | Lizzo                        |  9.369512774288873
+  66932 | White Iverson      | Post Malone                  |  8.900831946077952
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               |   8.86894642934634
+  59236 | The Hills          | The Weeknd                   |  8.531513145047889
+  50279 | Sanguine Paradise  | Lil Uzi Vert                 |  8.247931794792013
+  18264 | Fake Love          | Drake                        |  8.198277488986065
+  19912 | Fortunate Son      | Creedence Clearwater Revival |   7.99661172137634
+  12991 | DNA.               | Kendrick Lamar               | 7.8826131837234445
+  38424 | Mercy              | Shawn Mendes                 |   7.80574050512465
+  48245 | Respect            | Aretha Franklin              |   7.77191214297432
+  37521 | Malibu             | Miley Cyrus                  |  7.705061455408497
+  25761 | How Long           | Charlie Puth                 |  7.519410383463804
+  39217 | Mo Bamba           | Sheck Wes                    |   7.43007546255382
+(20 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 08:00 10:00 / more / 10 / 1 0 0
+(1 row)
+
+ songid |     songname     |   artistname    | songscore 
+--------+------------------+-----------------+-----------
+  34228 | Let You Love Me  | Rita Ora        |       161
+   1521 | A Thousand Years | Christina Perri |       158
+  28108 | I'll Be There    | Jess Glynne     |       155
+  15122 | Don't Call Me Up | Mabel           |       154
+   7316 | Birthday         | Anne-Marie      |       150
+  48236 | Rescue Me        | OneRepublic     |       148
+   8586 | Break Up Song    | Little Mix      |       145
+  36870 | Lush Life        | Zara Larsson    |       145
+  49576 | Ruin My Life     | Zara Larsson    |       145
+  56498 | Sweet Melody     | Little Mix      |       145
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 08:00 10:00 / more / 10 / 0 1 0
+(1 row)
+
+ songid |             songname              |    artistname     |     songscore      
+--------+-----------------------------------+-------------------+--------------------
+  49128 | Rockin' Around The Christmas Tree | Brenda Lee        |  4.651205938292382
+  41409 | New Rules                         | Dua Lipa          |  3.189362954617226
+  18337 | Falling                           | Trevor Daniel     | 1.6400571558164463
+   6304 | Be Careful                        | Cardi B           |  1.330070031721371
+  46842 | Pumped Up Kicks                   | Foster The People |  1.140458776578745
+  30107 | Into You                          | Ariana Grande     |  0.852398730294437
+  55640 | Style                             | Taylor Swift      | 0.7909264219892848
+  25726 | How Do You Sleep?                 | Sam Smith         | 0.7703211355605856
+  42573 | Numb                              | Linkin Park       | 0.6743808764083213
+  60069 | The Real Slim Shady               | Eminem            | 0.6488947917654871
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 08:00 10:00 / more / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          |    songscore     
+--------+--------------------+------------------------------+------------------
+  36616 | Lovely Day         | Bill Withers                 | 10.2537810817739
+  62823 | Trip               | Ella Mai                     | 10.0333802844077
+  19912 | Fortunate Son      | Creedence Clearwater Revival | 9.81002509102572
+  22564 | Graveyard          | Halsey                       | 9.30448941614329
+   6973 | Better Now         | Post Malone                  | 7.68855440391524
+  11036 | Chun-Li            | Nicki Minaj                  |  6.3081532881249
+  66932 | White Iverson      | Post Malone                  | 6.05813479349916
+   8569 | Break My Stride    | Matthew Wilder               | 5.97845456949379
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               | 5.90432719056216
+  39217 | Mo Bamba           | Sheck Wes                    | 5.90057530609234
+(10 rows)
+
+           recommendation_helper            
+--------------------------------------------
+ Inputs: 08:00 10:00 / more / 20 / 0.05 1 1
+(1 row)
+
+ songid |      songname       |          artistname          |     songscore      
+--------+---------------------+------------------------------+--------------------
+  62823 | Trip                | Ella Mai                     | 17.165927992934833
+  22564 | Graveyard           | Halsey                       |  16.01584603595788
+  11036 | Chun-Li             | Nicki Minaj                  | 12.908822989853315
+  25726 | How Do You Sleep?   | Sam Smith                    | 12.105477118415596
+  62978 | Truth Hurts         | Lizzo                        | 12.028782211409716
+  38424 | Mercy               | Shawn Mendes                 | 11.955207165864408
+  41409 | New Rules           | Dua Lipa                     | 11.695087340139178
+  25761 | How Long            | Charlie Puth                 |   11.6683504884992
+   1521 | A Thousand Years    | Christina Perri              | 11.248249389931587
+  67732 | Without Me          | Halsey                       | 11.097067161282164
+  44769 | Paradise            | Bazzi                        | 10.979176061502008
+  36870 | Lush Life           | Zara Larsson                 | 10.864975110115473
+  49576 | Ruin My Life        | Zara Larsson                 |  10.78426933356179
+   6102 | Barbie Dreams       | Nicki Minaj                  | 10.575334396652972
+  15122 | Don't Call Me Up    | Mabel                        | 10.521025484466863
+  19912 | Fortunate Son       | Creedence Clearwater Revival |  10.31002509102572
+  36616 | Lovely Day          | Bill Withers                 |   10.2537810817739
+   5680 | Back To You         | Selena Gomez                 | 10.219705668512704
+  57672 | Tell Me You Love Me | Demi Lovato                  |  10.21380739326743
+  66574 | When We Were Young  | Adele                        | 10.125241462843707
+(20 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 20:00 22:00 / edge / 10 / 1 0 0
+(1 row)
+
+ songid |        songname         |  artistname  | songscore 
+--------+-------------------------+--------------+-----------
+  34228 | Let You Love Me         | Rita Ora     |       223
+  69638 | Your Song               | Rita Ora     |       223
+  49576 | Ruin My Life            | Zara Larsson |       213
+  15122 | Don't Call Me Up        | Mabel        |       209
+  28108 | I'll Be There           | Jess Glynne  |       203
+    628 | 2002                    | Anne-Marie   |       199
+  50677 | Scars To Your Beautiful | Alessia Cara |       193
+  34690 | Lights Down Low         | MAX          |       192
+  57164 | Take Yourself Home      | Troye Sivan  |       189
+  44769 | Paradise                | Bazzi        |       188
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 20:00 22:00 / edge / 10 / 0 1 0
+(1 row)
+
+ songid |             songname              |   artistname    |     songscore      
+--------+-----------------------------------+-----------------+--------------------
+  61383 | This Love                         | Maroon 5        | 3.0093391965218745
+  50677 | Scars To Your Beautiful           | Alessia Cara    | 2.3671857623883574
+  30107 | Into You                          | Ariana Grande   |  1.524283781559643
+  49128 | Rockin' Around The Christmas Tree | Brenda Lee      | 1.3659110831155976
+  41409 | New Rules                         | Dua Lipa        | 1.2038673373146689
+  18337 | Falling                           | Trevor Daniel   |  0.887430411550735
+   6304 | Be Careful                        | Cardi B         | 0.7880505175131295
+  66323 | Whatever It Takes                 | Imagine Dragons | 0.7862954623173651
+  25761 | How Long                          | Charlie Puth    |  0.761235157171082
+  15065 | Don't                             | Bryson Tiller   | 0.7546238834185341
+(10 rows)
+
+          recommendation_helper          
+-----------------------------------------
+ Inputs: 20:00 22:00 / edge / 10 / 0 0 1
+(1 row)
+
+ songid |      songname      |          artistname          |    songscore     
+--------+--------------------+------------------------------+------------------
+  19912 | Fortunate Son      | Creedence Clearwater Revival | 13.5096165087513
+  39217 | Mo Bamba           | Sheck Wes                    | 7.76037166210743
+  54826 | Starships          | Nicki Minaj                  | 6.94547402192368
+  38424 | Mercy              | Shawn Mendes                 |  6.8953720119502
+  22564 | Graveyard          | Halsey                       | 6.45072452801163
+  46842 | Pumped Up Kicks    | Foster The People            | 6.34758651333178
+  10681 | Chasing Cars       | Snow Patrol                  | 5.77963368237133
+  33445 | Last Christmas     | Wham!                        | 5.65419590266518
+  36429 | Love Story         | Taylor Swift                 |  5.6516271795446
+  56457 | Sweet Home Alabama | Lynyrd Skynyrd               | 5.62678609880852
+(10 rows)
+
+           recommendation_helper            
+--------------------------------------------
+ Inputs: 20:00 22:00 / edge / 20 / 0.05 1 1
+(1 row)
+
+ songid |        songname         |          artistname          |     songscore      
+--------+-------------------------+------------------------------+--------------------
+  38424 | Mercy                   | Shawn Mendes                 | 16.008448827585582
+  54826 | Starships               | Nicki Minaj                  | 15.698598278323164
+  22564 | Graveyard               | Halsey                       | 15.664091684507268
+  50677 | Scars To Your Beautiful | Alessia Cara                 | 15.493751370195659
+  62823 | Trip                    | Ella Mai                     | 14.419042655987095
+  44769 | Paradise                | Bazzi                        | 14.336399439241603
+   4964 | Attention               | Charlie Puth                 | 14.032165073460083
+  19912 | Fortunate Son           | Creedence Clearwater Revival |   13.8096165087513
+  12296 | Counting Stars          | OneRepublic                  |  13.51290344010324
+  49576 | Ruin My Life            | Zara Larsson                 | 13.462552522209632
+  52943 | Slide Away              | Miley Cyrus                  | 13.209091585866762
+  62767 | Treat You Better        | Shawn Mendes                 | 13.163948016840646
+   9456 | Cake By The Ocean       | DNCE                         | 13.142117276811334
+  11036 | Chun-Li                 | Nicki Minaj                  | 13.059839066117146
+   5738 | Bad At Love             | Halsey                       | 12.825624900432938
+  15122 | Don't Call Me Up        | Mabel                        | 12.792979773104808
+   6102 | Barbie Dreams           | Nicki Minaj                  | 12.748844714961338
+  36360 | Love On The Brain       | Rihanna                      |  12.66396735100008
+  25761 | How Long                | Charlie Puth                 | 12.647667522874864
+  22628 | Green Light             | Lorde                        | 12.564336355647129
+(20 rows)
+
