@@ -1,6 +1,6 @@
                      ?column?                     
 --------------------------------------------------
- Output started on: 2021-10-17 17:24:31.310286+00
+ Output started on: 2021-10-19 16:40:40.060125-04
 (1 row)
 
  ?column? 
@@ -41,16 +41,16 @@
 
       songname      |   artistname   | minrank 
 --------------------+----------------+---------
- Lucid Dreams       | Juice WRLD     |       4
- Love Story         | Taylor Swift   |       9
- Can't Feel My Face | The Weeknd     |      15
- Bad At Love        | Halsey         |      17
- Suge               | DaBaby         |      18
- Issues             | Julia Michaels |      20
- Location           | Khalid         |      24
- Be Alright         | Dean Lewis     |      26
- Mo Bamba           | Sheck Wes      |      40
- White Iverson      | Post Malone    |      42
+ Can't Feel My Face | The Weeknd     |       1
+ Lucid Dreams       | Juice WRLD     |       2
+ Love Story         | Taylor Swift   |       4
+ Bad At Love        | Halsey         |       5
+ Mo Bamba           | Sheck Wes      |       6
+ Suge               | DaBaby         |       7
+ Issues             | Julia Michaels |      11
+ White Iverson      | Post Malone    |      14
+ Location           | Khalid         |      16
+ Be Alright         | Dean Lewis     |      23
 (10 rows)
 
  ?column? 
@@ -60,16 +60,16 @@
 
       songname      |   artistname   | minrank 
 --------------------+----------------+---------
- Lucid Dreams       | Juice WRLD     |       4
- Love Story         | Taylor Swift   |       9
- Can't Feel My Face | The Weeknd     |      15
- Bad At Love        | Halsey         |      17
- Suge               | DaBaby         |      18
- Issues             | Julia Michaels |      20
- Location           | Khalid         |      24
- Be Alright         | Dean Lewis     |      26
- Mo Bamba           | Sheck Wes      |      40
- White Iverson      | Post Malone    |      42
+ Can't Feel My Face | The Weeknd     |       1
+ Lucid Dreams       | Juice WRLD     |       2
+ Love Story         | Taylor Swift   |       4
+ Bad At Love        | Halsey         |       5
+ Mo Bamba           | Sheck Wes      |       6
+ Suge               | DaBaby         |       7
+ Issues             | Julia Michaels |      11
+ White Iverson      | Post Malone    |      14
+ Location           | Khalid         |      16
+ Be Alright         | Dean Lewis     |      23
 (10 rows)
 
  ?column? 
@@ -141,6 +141,6 @@
 
                            ?column?                           
 --------------------------------------------------------------
- Output finished generating on: 2021-10-17 17:24:35.800635+00
+ Output finished generating on: 2021-10-19 16:40:42.121996-04
 (1 row)
 
