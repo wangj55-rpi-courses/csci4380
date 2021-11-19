@@ -1,0 +1,48 @@
+-- Q1
+select songid from playedonradio
+where station = 'mai' ;
+
+-- Q2
+select songid from playedonradio
+where playedtime >= timestamp '2020-11-18 00:00:00'
+      and playedtime <= timestamp '2020-11-18 23:59:59';
+
+-- Q3
+select songid from playedonradio
+where playedtime >= timestamp '2020-11-18 08:00:00'
+      and playedtime <= timestamp '2020-11-18 09:59:59'
+      and station = 'mai';
+
+-- Q4
+select playedtime from playedonradio
+where songid = 29643;
+
+-- Q5
+select songid playedonradio
+where songid = 29643
+      and station = 'george';
+
+-- Q6
+select id playedonradio
+where songid = 29643
+      and station = 'george'
+      and playedtime::date = date '2020-11-14';
+
+-- Q7
+select streams from spotify
+where songid = 13154;
+
+-- Q8
+select songid from spotify
+where streamdate = date '11-01-2020' ;
+
+-- Q9
+select streamdate from spotify
+where position = 1
+      and songid = 13154;
+
+-- Q10
+select streamdate from spotify
+where position = 1
+      and songid = 13154
+      and streamdate >= date '2020-01-01';
