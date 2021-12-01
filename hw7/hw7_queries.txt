@@ -18,12 +18,12 @@ select playedtime from playedonradio
 where songid = 29643;
 
 -- Q5
-select songid playedonradio
+select songid from playedonradio
 where songid = 29643
       and station = 'george';
 
 -- Q6
-select id playedonradio
+select id from playedonradio
 where songid = 29643
       and station = 'george'
       and playedtime::date = date '2020-11-14';
