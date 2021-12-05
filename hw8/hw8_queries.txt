@@ -1,0 +1,193 @@
+
+---  'Query 1';
+
+select 
+   s.name as songname
+   , a.name as artistname
+   , count(distinct p.id) as numplayed
+from
+   songs s
+   join bilboard b on b.songid = s.id
+   join artists a on a.id = s.artistid
+   left join playedonradio p on p.songid = s.id
+where
+   s.danceability >= 0.9
+   and b.rank <= 10
+group by
+   s.id
+   , s.name
+   , a.name
+order by
+   numplayed desc
+   , songname asc
+   , artistname asc
+;
+
+-- 'Query 2';
+
+select
+   s.name as songname
+   , a.name as artistname
+   , min(b.rank) as minrank
+from
+   songs s
+   join artists a on s.artistid = a.id
+   join bilboard b on b.songid = s.id
+   join bilboard b2 on b2.songid = s.id and b2.weeksonboard >= 25
+   left join playedonradio p on s.id = p.songid
+where
+   p.songid is null
+group by
+   s.id
+   , s.name
+   , a.id
+   , a.name
+order by
+   minrank
+   , songname
+   , artistname;
+
+
+---- 'Query 3';
+
+SELECT
+   s.id as songid
+   , s.name as songname
+   , a.name as artistname
+FROM
+   songs s
+   , bilboard b
+   , artists a
+WHERE
+   s.id = b.songid
+   and a.id = s.artistid
+   and b.weeksonboard >= 25
+   and extract(month from b.chartdate) = 8
+   and extract(year from  b.chartdate) = 2020
+UNION
+SELECT
+   s.id as songid
+   , s.name as songname
+   , a.name as artistname
+FROM
+   songs s
+   , artists a
+   , spotify sp
+WHERE
+   s.id = sp.songid
+   and s.artistid = a.id
+   and sp.streams>= 5000000
+   and extract(month from sp.streamdate) = 8
+   and extract(year from  sp.streamdate) = 2020
+ORDER BY
+   songname ASC, artistname ASC;
+
+--- 'Query 4';
+
+SELECT
+   s.id as songid
+   , s.name as songname
+   , a.name as artistname
+FROM
+   songs s
+   , artists a
+   , playedonradio p
+WHERE
+   s.id = p.songid
+   and s.artistid = a.id
+   and p.playedtime::time <= time '10:00:00'
+   and p.playedtime::time >= time '08:00:00'
+EXCEPT   
+SELECT
+   s.id as songid
+   , s.name as songname
+   , a.name as artistname
+FROM
+   songs s
+   , artists a
+   , playedonradio p
+WHERE
+   s.id = p.songid
+   and a.id = s.artistid
+   and p.playedtime::time < time '08:00:00'
+   or p.playedtime::time > time '10:00:00')
+ORDER BY
+   songname ASC
+   , artistname ASC;
+
+
+--- 'Query 5';
+
+SELECT
+    sg.genre
+FROM
+    song_genre sg
+    , bilboard b
+WHERE
+    sg.songid = b.songid
+GROUP BY
+    sg.genre
+HAVING
+    count(distinct b.songid) >= 4
+EXCEPT
+SELECT
+    sg.genre
+FROM
+    song_genre sg
+    , bilboard b
+WHERE
+    sg.songid = b.songid
+    and b.rank <= 5
+ORDER BY
+    genre asc
+;
+
+-- 'Query 6'
+
+SELECT DISTINCT
+   a.name
+FROM
+   artists a
+   , songs s
+   , spotify sp
+WHERE
+   a.id = s.artistid
+   and s.id = sp.songid
+   and sp.streams >= 10000000
+ORDER BY
+   a.name ASC;
+
+
+-- 'Query 7'
+
+SELECT
+    s.id as songid
+    , s.name as songname
+    , a.name as artistname
+FROM
+    songs s
+    , playedonradio p
+    , spotify sp
+    , artists a
+WHERE
+    s.id = p.songid
+    and s.id = sp.songid
+    and sp.streams >= 4000000
+    and a.id = s.artistid
+EXCEPT
+SELECT
+    s.id as songid
+    , s.name as songname
+    , a.name as artistname
+FROM
+    songs s
+    , bilboard b
+    , artists a
+WHERE
+    s.id = b.songid
+    and a.id = s.artistid
+ORDER BY
+    songname ASC
+    , artistname ASC
+;
+
